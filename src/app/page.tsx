@@ -63,7 +63,7 @@ export default function Home() {
           
   <div className="flex items-center pt-8 justify-center">
 <svg width="61" height="41" viewBox="0 0 61 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_52_1149)">
+<g clipPath="url(#clip0_52_1149)">
 <path d="M26.3168 13.5735C26.3168 16.3724 24.1273 18.4348 21.4401 18.4348C18.7531 18.4348 16.5635 16.3724 16.5635 13.5735C16.5635 10.7549 18.7531 8.71216 21.4401 8.71216C24.1273 8.71216 26.3168 10.7549 26.3168 13.5735ZM24.1821 13.5735C24.1821 11.8244 22.913 10.6278 21.4401 10.6278C19.9673 10.6278 18.6983 11.8244 18.6983 13.5735C18.6983 15.305 19.9673 16.5192 21.4401 16.5192C22.913 16.5192 24.1821 15.3028 24.1821 13.5735Z" fill="#EA4335"/>
 <path d="M36.8368 13.5735C36.8368 16.3724 34.6472 18.4348 31.9602 18.4348C29.2731 18.4348 27.0835 16.3724 27.0835 13.5735C27.0835 10.7571 29.2731 8.71216 31.9602 8.71216C34.6472 8.71216 36.8368 10.7549 36.8368 13.5735ZM34.7021 13.5735C34.7021 11.8244 33.433 10.6278 31.9602 10.6278C30.4873 10.6278 29.2182 11.8244 29.2182 13.5735C29.2182 15.305 30.4873 16.5192 31.9602 16.5192C33.433 16.5192 34.7021 15.3028 34.7021 13.5735Z" fill="#FBBC05"/>
 <path d="M46.9192 9.00586V17.7334C46.9192 21.3236 44.802 22.7899 42.299 22.7899C39.9428 22.7899 38.5248 21.214 37.99 19.9252L39.8486 19.1515C40.1795 19.9427 40.9905 20.8764 42.2968 20.8764C43.899 20.8764 44.8918 19.888 44.8918 18.0271V17.328H44.8173C44.3395 17.9176 43.4189 18.4326 42.2573 18.4326C39.8267 18.4326 37.5999 16.3154 37.5999 13.591C37.5999 10.847 39.8267 8.71216 42.2573 8.71216C43.4168 8.71216 44.3373 9.22722 44.8173 9.79927H44.8918V9.00807H46.9192V9.00586ZM45.043 13.591C45.043 11.8792 43.9011 10.6278 42.448 10.6278C40.9751 10.6278 39.7412 11.8792 39.7412 13.591C39.7412 15.2853 40.9751 16.5192 42.448 16.5192C43.9011 16.5192 45.043 15.2853 45.043 13.591Z" fill="#4285F4"/>
@@ -209,7 +209,94 @@ in Asia
             The way design &nbsp;
             <span className={`${snfFont.className} p-2`}>Should&apos;ve</span> been done in the first place
           </h1>
+
+          <Image src="/Subscribe.svg" alt="Hero Card" width={320} height={180} className="mt-8 ml-[-8px]" />
+          <Image src="/Request.svg" alt="Hero Card" width={320} height={180} className="mt-8 ml-[-8px]" />
+          <Image src="/Recieve.svg" alt="Hero Card" width={320} height={180} className="mt-8 ml-[-8px]" />
+
+                    <h1 className="text-4xl mt-10 text-black font-medium text-center">
+            It&apos;s &nbsp;
+            <span className={`${snfFont.className} p-2`}>"you&apos;'ll never go back"</span> better
+          </h1>
+<p className="text-gray-500 text-[12px] ml-2 text-center">
+Pesign replaces unreliable freelancers and expensive
+agencies for one flat monthly fee, with designs delivered
+so fast you won't want to go anywhere else.
+</p>
+
+<div className="flex flex-col items-center font-sans p-6">
+      {/* Get Started Button */}
+      <button className="mb-6 px-6 py-3 text-lg font-semibold text-white rounded-lg shadow-md bg-gradient-to-b from-gray-600 to-black hover:opacity-90">
+        Get Started
+      </button>
+
+      {/* Table */}
+      <table className="border-collapse w-full max-w-4xl">
+        <thead>
+          <tr className="bg-black text-white border-b border-gray-300">
+        <th className="p-4 text-lg font-bold border-gray-300 rounded-md">P.</th>
+        <th className="p-4 border-gray-300">Platform</th>
+        <th className="p-4 border-gray-300">Speed</th>
+        <th className="p-4 border-gray-300">Quality</th>
+        <th className="p-4 border-gray-300">Support</th>
+        <th className="p-4">Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* Pesign row */}
+          <tr className="font-semibold border-b border-gray-400">
+        <td className="p-4 text-left text-lg italic border-r border-gray-300">Pesign</td>
+        <td className="p-4 border-l border-r border-gray-300 bg-blue-500 rounded-md">✔</td>
+        <td className="p-4 border-l border-r border-gray-300 bg-blue-500">✔</td>
+        <td className="p-4 border-l border-r border-gray-300 bg-blue-500">✔</td>
+        <td className="p-4 border-l border-r border-gray-300 bg-blue-500">✔</td>
+        <td className="p-4 border-l border-gray-300 bg-blue-500">✔</td>
+          </tr>
+
+          {/* In-house team */}
+          <tr className="border-t border-b border-gray-300">
+        <td className="p-4 text-left border-r border-gray-300">In-house team</td>
+        <td className="p-4 border-l border-r border-gray-300">✘</td>
+        <td className="p-4 border-l border-r border-gray-300">✘</td>
+        <td className="p-4 border-l border-r border-gray-300">✔</td>
+        <td className="p-4 border-l border-r border-gray-300">✔</td>
+        <td className="p-4 border-l border-gray-300">✘</td>
+          </tr>
+
+          {/* Freelancers */}
+          <tr className="border-t border-b border-gray-300">
+        <td className="p-4 text-left border-r border-gray-300">Freelancers</td>
+        <td className="p-4 border-l border-r border-gray-300">✘</td>
+        <td className="p-4 border-l border-r border-gray-300">✘</td>
+        <td className="p-4 border-l border-r border-gray-300">✔</td>
+        <td className="p-4 border-l border-r border-gray-300">✘</td>
+        <td className="p-4 border-l border-gray-300">✘</td>
+          </tr>
+
+          {/* Agencies */}
+          <tr className="border-t border-b border-gray-300">
+        <td className="p-4 text-left border-r border-gray-300">Agencies</td>
+        <td className="p-4 border-l border-r border-gray-300">✘</td>
+        <td className="p-4 border-l border-r border-gray-300">✘</td>
+        <td className="p-4 border-l border-r border-gray-300">✔</td>
+        <td className="p-4 border-l border-r border-gray-300">✔</td>
+        <td className="p-4 border-l border-gray-300">✘</td>
+          </tr>
+
+          {/* DIY Tools */}
+          <tr className="border-t border-gray-300">
+        <td className="p-4 text-left border-r border-gray-300">DIY Tools</td>
+        <td className="p-4 border-l border-r border-gray-300">✔</td>
+        <td className="p-4 border-l border-r border-gray-300">✔</td>
+        <td className="p-4 border-l border-r border-gray-300">✘</td>
+        <td className="p-4 border-l border-r border-gray-300">✘</td>
+        <td className="p-4 ">✘</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
               </div>
+
       </main>
     </div>
   );
