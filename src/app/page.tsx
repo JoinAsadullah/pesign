@@ -71,11 +71,11 @@ export default function Home() {
 
           <div className=" hidden 
           md:flex">
-            <button className="px-4 py-2 text-[14px] text-white rounded-lg">
+            <button className="px-4 py-[6px] text-[14px] text-white rounded-lg">
               Login
             </button>
-            <button className="px-4 py-2 text-[14px] text-white rounded-lg shadow-md border-1 box-border mx-2 border-white hover:opacity-90 flex">
-              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button className="px-4 py-[6px] my-[1px] text-[12px] text-white rounded-lg shadow-md border-1 box-border mx-2 border-white hover:opacity-90 flex items-center">
+              <svg width="15" height="15" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_280_4)">
                   <g clip-path="url(#clip1_280_4)">
                     <path d="M17.6781 13.0577L15.8629 11.2425C15.6697 11.0453 15.4391 10.8887 15.1847 10.7818C14.9303 10.6749 14.657 10.6198 14.381 10.6198C14.105 10.6198 13.8318 10.6749 13.5774 10.7818C13.3229 10.8887 13.0924 11.0453 12.8992 11.2425L12.5361 11.6055C10.7077 10.0796 9.01909 8.39354 7.49051 6.56731L7.86097 6.19685C8.25369 5.80369 8.47428 5.27072 8.47428 4.71502C8.47428 4.15932 8.25369 3.62634 7.86097 3.23319L6.06795 1.44017C5.67107 1.05454 5.13949 0.838821 4.58612 0.838821C4.03275 0.838821 3.50117 1.05454 3.10429 1.44017L2.11146 2.433C1.63562 2.91516 1.33932 3.54579 1.27191 4.21985C1.20451 4.89392 1.37006 5.57073 1.741 6.13758C4.70187 10.5951 8.52317 14.4164 12.9807 17.3773C13.5475 17.7482 14.2244 17.9138 14.8984 17.8464C15.5725 17.779 16.2031 17.4827 16.6853 17.0068L17.6781 16.0214C17.8752 15.8282 18.0319 15.5977 18.1388 15.3432C18.2457 15.0888 18.3008 14.8156 18.3008 14.5396C18.3008 14.2636 18.2457 13.9903 18.1388 13.7359C18.0319 13.4814 17.8752 13.2509 17.6781 13.0577Z" fill="white" />
@@ -92,7 +92,7 @@ export default function Home() {
               </svg>
               Book a call
             </button>
-            <button className="px-4 py-2 text-[14px] text-white rounded-lg shadow-md bg-gradient-to-b from-gray-600 to-black hover:opacity-90">
+            <button className="px-4 py-[6px] text-[12px] text-white rounded-lg shadow-md bg-gradient-to-b from-gray-600 to-black hover:opacity-90">
               See pricing
             </button>
           </div>
@@ -112,7 +112,8 @@ export default function Home() {
               subscriptions for&nbsp;<br />
               <span className={`${snfFont.className}`}>everyone</span>
             </h1>
-            <button className="w-[120px] px-4 py-2 text-[14px] text-white rounded-lg shadow-md bg-gradient-to-b from-gray-600 to-black hover:opacity-90 max-md:hidden">
+            <button className="w-[120px] px-4 py-2 text-[14px] text-white rounded-lg shadow-md bg-gradient-to-b from-gray-600 to-black hover:opacity-90 mb-4 
+            max-md:hidden">
               See pricing
             </button>
             <p className="text-[10px] mt-4 text-black">
@@ -329,18 +330,19 @@ export default function Home() {
           {/* Table */}
           <table className="w-full table-auto border-collapse align-middle">
             <thead>
-              <tr className="bg-black text-white">
-                <th className="pl-4 p-4 px-2 rounded-tl-md rounded-bl-md"><svg width="17" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <tr className="bg-black text-white font-normal text-[10px] 
+              md:text-[14px] ">
+                <th className="pl-4 p-4 px-2 rounded-tl-md rounded-bl-md"><svg width="17" viewBox="0 0 13 15" className="md:w-[25px]" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.5292 13.0826C11.1669 13.0826 10.8717 13.3779 10.8717 13.7413C10.8717 14.1047 11.1664 14.3999 11.5292 14.3999C11.892 14.3999 12.1867 14.1047 12.1867 13.7413C12.1867 13.3779 11.892 13.0826 11.5292 13.0826ZM11.5292 14.5348C11.0922 14.5348 10.7371 14.179 10.7371 13.7413C10.7371 13.3035 11.0922 12.9478 11.5292 12.9478C11.9661 12.9478 12.3213 13.3035 12.3213 13.7413C12.3213 14.179 11.9661 14.5348 11.5292 14.5348Z" fill="white" />
                   <path d="M11.3689 13.4857V13.6967H11.5455C11.5805 13.6967 11.6069 13.6927 11.6247 13.684C11.6557 13.6693 11.6714 13.6398 11.6714 13.5955C11.6714 13.5477 11.6562 13.5162 11.6262 13.4994C11.6095 13.4903 11.5841 13.4857 11.5501 13.4857H11.3689ZM11.7079 13.3688C11.7369 13.381 11.7612 13.3998 11.7815 13.4237C11.7983 13.4435 11.8115 13.4654 11.8211 13.4898C11.8308 13.5142 11.8358 13.5416 11.8358 13.5726C11.8358 13.6098 11.8262 13.6464 11.8079 13.6825C11.7892 13.7186 11.7582 13.744 11.7145 13.7593C11.7506 13.774 11.7765 13.7943 11.7917 13.8213C11.8069 13.8477 11.8145 13.8889 11.8145 13.9443V13.9972C11.8145 14.0328 11.816 14.0577 11.8186 14.0699C11.8227 14.0903 11.8328 14.105 11.849 14.1147V14.134H11.6678C11.6633 14.1162 11.6592 14.1025 11.6572 14.0923C11.6531 14.0704 11.6506 14.0476 11.6501 14.0247L11.6491 13.952C11.6491 13.9021 11.6394 13.8686 11.6227 13.8513C11.6059 13.8345 11.5749 13.8259 11.5293 13.8259H11.3689V14.134H11.2085V13.3479H11.5836C11.6374 13.3489 11.6785 13.3555 11.7074 13.3683L11.7079 13.3688Z" fill="white" />
                   <path d="M12.25 5.18853C11.8235 2.80916 9.55571 0.786046 5.67976 0.744745C3.93029 0.725895 2.43922 1.44856 1.44016 2.6213C0.240096 4.02998 0.101578 5.78009 0.306601 6.8734C0.413917 7.44974 0.613297 8.00505 0.897097 8.51803C0.979488 8.66438 1.06463 8.79506 1.14215 8.90965C1.2659 9.09111 1.40065 9.26483 1.54563 9.42983L1.62823 9.51455C1.62823 9.51455 0.692499 2.36375 6.39904 2.75812C6.94421 2.78205 7.39132 2.91993 7.79777 3.1042L7.81662 3.11267C7.8342 3.12072 7.85177 3.12877 7.86893 3.13724C7.89604 3.15023 7.92294 3.16357 7.94963 3.17727C7.9514 3.17831 7.95324 3.17923 7.95514 3.18002L7.96721 3.18659C7.99114 3.1993 8.01508 3.21201 8.03859 3.22514L8.05065 3.23192C8.13537 3.27992 8.21819 3.33189 8.2991 3.3878L8.30206 3.38992C8.58558 3.58717 8.83456 3.82991 9.03892 4.10835C9.05353 4.12825 9.06772 4.14816 9.08128 4.16829L9.08995 4.18036C9.09271 4.18417 9.09504 4.18798 9.09759 4.19179C9.10818 4.20726 9.11877 4.22293 9.12893 4.2386C9.14884 4.26868 9.16811 4.2989 9.18675 4.32925C9.18675 4.33095 9.18866 4.33243 9.1895 4.33391C9.20073 4.35234 9.21068 4.37098 9.22233 4.38941C9.22572 4.39512 9.2289 4.40084 9.23208 4.40656C9.24267 4.42478 9.25326 4.4432 9.263 4.46163C9.26576 4.4665 9.26829 4.47158 9.27083 4.47645C9.28714 4.50653 9.3026 4.53682 9.31764 4.5671C9.32378 4.5796 9.33014 4.5921 9.33607 4.60481C9.342 4.61751 9.34709 4.62831 9.35259 4.63996L9.37547 4.69016C9.37949 4.69969 9.38372 4.70901 9.38775 4.71854C9.39707 4.74015 9.40617 4.76196 9.41507 4.78399C9.41698 4.78907 9.41931 4.79415 9.42121 4.79924C9.43223 4.82748 9.44282 4.85522 9.45298 4.88248L9.45425 4.88544C9.5095 5.03254 9.55202 5.18411 9.58134 5.33848C9.58134 5.34208 9.5824 5.34547 9.58303 5.34907C9.61736 5.52438 9.63657 5.70231 9.64043 5.8809C9.65247 6.13879 9.62657 6.39705 9.56355 6.64741V6.64995C9.54547 6.72902 9.52429 6.80668 9.50001 6.88293C9.50001 6.88399 9.5 6.88526 9.49894 6.88653C9.49746 6.89119 9.49577 6.89606 9.49407 6.90093C9.44878 7.04299 9.39329 7.18158 9.32802 7.31564C9.32761 7.3166 9.32712 7.31752 9.32654 7.31839C9.31659 7.33957 9.30642 7.35948 9.29583 7.37981C9.29138 7.38871 9.28651 7.3976 9.28185 7.4065C9.27486 7.41963 9.26808 7.43276 9.26067 7.44568L9.25749 7.45182C9.25431 7.45733 9.25114 7.46263 9.24817 7.46813C9.23843 7.4855 9.22869 7.50266 9.21873 7.51981L9.20899 7.53633C9.19692 7.55751 9.18464 7.577 9.17214 7.59712L9.16897 7.60199C9.02171 7.83801 8.84364 8.05333 8.63946 8.24226L8.6367 8.24459C8.62089 8.25871 8.6048 8.27333 8.58842 8.28844L8.57211 8.30284L8.53843 8.33164L8.5092 8.35642L8.48802 8.37316L8.4482 8.40535L8.42702 8.42187C8.41537 8.43098 8.40372 8.44009 8.39186 8.44898H8.39038C8.21433 8.5821 8.02461 8.69613 7.82445 8.78913L7.81577 8.79337L7.81048 8.7957L7.79205 8.80396C7.73211 8.83086 7.67089 8.85606 7.60862 8.87872C7.31808 8.98662 7.01303 9.05044 6.7036 9.06807C6.67458 9.06998 6.64578 9.07189 6.61698 9.07316C6.43007 9.08311 6.24264 9.07388 6.05761 9.04562L6.0735 8.97954L6.47126 7.29658C6.58876 6.81051 6.50857 6.29768 6.24831 5.87068C5.98805 5.44368 5.56899 5.1374 5.08312 5.01909L4.28251 4.82423L4.05272 5.76695L4.01988 5.90314L1.94424 14.5349L4.49135 14.5321C4.55333 14.532 4.61353 14.5113 4.66243 14.4732C4.71133 14.4351 4.74615 14.3819 4.7614 14.3218L5.58255 11.1024C7.43623 11.6815 9.15901 11.4089 10.4506 10.3213C11.8129 9.17037 12.5654 6.95918 12.25 5.18853Z" fill="white" />
                 </svg>
                 </th>
-                <th className="p-4 px-2 border-gray-300 font-normal text-[10px]">Platform</th>
-                <th className="p-4 px-2 border-gray-300 font-normal text-[10px]">Speed</th>
-                <th className="p-4 px-2 border-gray-300 font-normal text-[10px]">Quality</th>
-                <th className="p-4 px-2 border-gray-300 font-normal text-[10px]">Support</th>
-                <th className="p-4 px-2 rounded-tr-md rounded-br-md font-normal text-[10px] pr-4">Cost</th>
+                <th className="p-4 px-2 border-gray-300 font-normal">Platform</th>
+                <th className="p-4 px-2 border-gray-300 font-normal">Speed</th>
+                <th className="p-4 px-2 border-gray-300 font-normal">Quality</th>
+                <th className="p-4 px-2 border-gray-300 font-normal">Support</th>
+                <th className="p-4 px-2 rounded-tr-md rounded-br-md  pr-4 font-normal">Cost</th>
               </tr>
             </thead>
             <tbody>
@@ -350,8 +352,8 @@ export default function Home() {
 
               <tr className="font-semibold">
                 <td className="p-2 px-2 text-center text-left text-lg italic border-r border-gray-300
-                md:py-6
-                lg:py-8"><svg width="50" viewBox="0 0 36 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                md:py-2
+                lg:py-4"><svg width="50" viewBox="0 0 36 12" className="md:w-[85px]" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M32.7078 5.59432C32.1374 5.59432 31.7452 6.01534 31.5313 6.85739C31.5041 6.97623 31.3785 7.47704 31.1544 8.35984C30.9303 9.24263 30.8047 9.74005 30.7775 9.8521H29.1936L30.5382 4.37708H32.1476C32.0729 4.62494 32.0202 4.83036 31.9897 4.99334C32.5024 4.49762 33.0168 4.24976 33.5329 4.24976C34.049 4.24976 34.4479 4.40424 34.7297 4.71322C35.0149 5.0222 35.1338 5.42115 35.0862 5.91009C35.0727 6.09004 34.9623 6.61632 34.7552 7.48893C34.5515 8.36153 34.3528 9.14926 34.1593 9.8521H32.5652C33.122 8.10009 33.3988 6.89644 33.3954 6.24113C33.3954 6.01704 33.3291 5.85406 33.1967 5.7522C33.0677 5.64695 32.9047 5.59432 32.7078 5.59432Z" fill="#0084FF" />
                   <path d="M23.9368 9.76022C24.1337 10.2525 24.66 10.4987 25.5156 10.4987C26.2354 10.4987 26.7176 9.96394 26.962 8.8944C26.7108 9.10831 26.468 9.26789 26.2337 9.37315C26.0028 9.4784 25.7244 9.53103 25.3985 9.53103C25.0725 9.53103 24.7618 9.46822 24.4664 9.34259C24.171 9.21696 23.9113 8.99117 23.6872 8.66521C23.4665 8.33586 23.3562 7.93182 23.3562 7.45307C23.3562 6.61781 23.6414 5.87084 24.2118 5.21214C24.7822 4.55004 25.4732 4.21899 26.2846 4.21899C26.9875 4.21899 27.5273 4.49741 27.9042 5.05425C27.9314 4.94221 27.9891 4.71641 28.0774 4.37688H29.6461C29.2216 6.13567 28.8498 7.65849 28.5307 8.94533C28.2523 9.92659 27.8669 10.6328 27.3746 11.064C26.8856 11.4952 26.1828 11.7108 25.266 11.7108C23.9385 11.7108 23.0794 11.2406 22.689 10.3001C22.9674 10.1745 23.3833 9.9945 23.9368 9.76022ZM25.9943 8.33926C26.4459 8.33926 26.8109 8.14233 27.0893 7.74847C27.3678 7.35121 27.507 6.95905 27.507 6.57198C27.507 6.18491 27.4034 5.90818 27.1963 5.74181C26.9926 5.57544 26.7549 5.49225 26.4833 5.49225C26.0317 5.49225 25.6667 5.69767 25.3883 6.10851C25.1099 6.51935 24.9706 6.90302 24.9706 7.25954C24.9706 7.61605 25.0623 7.88598 25.2457 8.06933C25.4324 8.24928 25.682 8.33926 25.9943 8.33926Z" fill="#0084FF" />
                   <path d="M21.5359 4.50921C21.5481 4.45983 21.5768 4.41608 21.6172 4.38518L22.2105 3.93146C22.2896 3.87098 22.3992 3.87007 22.4792 3.92924L23.0451 4.34726C23.1178 4.40099 23.151 4.49325 23.1293 4.58102L21.8209 9.85216H20.2166L21.5359 4.50921Z" fill="#0084FF" />
@@ -380,8 +382,14 @@ export default function Home() {
               {/* In-house team */}
               <tr className="border-t border-b border-gray-300">
                 <td className="p-2 px-2 text-center text-left border-r border-gray-300 font-semibold text-[12px]
-                md:py-6
-                lg:py-8">In-house team</td>
+                md:text-[16px]
+                ">In-house team
+                <br/>
+                <p className="text-[12px] font-normal">
+                  Hiring takes time, replacements are slow, and ongoing salaries<br/> make
+in-house design costly, especially when needs fluctuate.
+                </p>
+                </td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{cross}</span></td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{cross}</span></td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{check}</span></td>
@@ -392,8 +400,14 @@ export default function Home() {
               {/* Freelancers */}
               <tr className="border-t border-b border-gray-300">
                 <td className="p-2 px-2 text-center text-left border-r border-gray-300 font-semibold text-[12px]
-                md:py-6
-                lg:py-8">Freelancers</td>
+                md:text-[16px]
+                ">Freelancers
+                                <br/>
+                <p className="text-[12px] font-normal">
+                  Hit or miss. Sourcing and managing talent for every project <br/> keeps you
+chasing consistency, not building your brand.
+                </p>
+                </td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{cross}</span></td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{cross}</span></td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{check}</span></td>
@@ -404,8 +418,14 @@ export default function Home() {
               {/* Agencies */}
               <tr className="border-t border-b border-gray-300">
                 <td className="p-2 px-2 text-center text-left border-r border-gray-300 font-semibold text-[12px]
-                md:py-6
-                lg:py-8">Agencies</td>
+                md:text-[16px]
+                ">Agencies
+                                <br/>
+                <p className="text-[12px] font-normal">
+                  Strategic partners, but high-cost retainers, rigid scopes, and<br/> slow
+timelines make them a poor fit for everyday creative needs.
+                </p>
+                </td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{cross}</span></td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{cross}</span></td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{check}</span></td>
@@ -416,8 +436,14 @@ export default function Home() {
               {/* DIY Tools */}
               <tr className="border-t border-gray-300">
                 <td className="p-2 px-2 text-center text-left border-r border-gray-300 font-semibold text-[12px]
-                md:py-6
-                lg:py-8">DIY Tools</td>
+                md:text-[16px]
+                ">DIY Tools
+                                <br/>
+                <p className="text-[12px] font-normal">
+                  Quick to use — but the output is off-brand, inconsistent, and<br/> still
+needs heavy manual effort to finish.
+                </p>
+                </td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{check}</span></td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{check}</span></td>
                 <td className="p-2 px-2 text-center border-l border-r border-gray-300"><span className="flex justify-center">{cross}</span></td>
