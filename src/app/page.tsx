@@ -385,7 +385,8 @@ export default function Home() {
                 md:text-[16px]
                 ">In-house team
                 <br/>
-                <p className="text-[12px] font-normal">
+                <p className="text-[12px] font-normal
+                max-md:hidden">
                   Hiring takes time, replacements are slow, and ongoing salaries<br/> make
 in-house design costly, especially when needs fluctuate.
                 </p>
@@ -403,7 +404,8 @@ in-house design costly, especially when needs fluctuate.
                 md:text-[16px]
                 ">Freelancers
                                 <br/>
-                <p className="text-[12px] font-normal">
+                <p className="text-[12px] font-normal
+                max-md:hidden">
                   Hit or miss. Sourcing and managing talent for every project <br/> keeps you
 chasing consistency, not building your brand.
                 </p>
@@ -421,7 +423,8 @@ chasing consistency, not building your brand.
                 md:text-[16px]
                 ">Agencies
                                 <br/>
-                <p className="text-[12px] font-normal">
+                <p className="text-[12px] font-normal
+                max-md:hidden">
                   Strategic partners, but high-cost retainers, rigid scopes, and<br/> slow
 timelines make them a poor fit for everyday creative needs.
                 </p>
@@ -439,7 +442,8 @@ timelines make them a poor fit for everyday creative needs.
                 md:text-[16px]
                 ">DIY Tools
                                 <br/>
-                <p className="text-[12px] font-normal">
+                <p className="text-[12px] font-normal
+                max-md:hidden">
                   Quick to use — but the output is off-brand, inconsistent, and<br/> still
 needs heavy manual effort to finish.
                 </p>
